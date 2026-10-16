@@ -45,8 +45,9 @@ void *imbe2_decoder_from(void *combined);
 size_t imbe2_encoder_state_size(void);
 size_t imbe2_decoder_state_size(void);
 void imbe2_encoder_init(void *state);
-/* enhanced-encoder mode on an encoder state (0 = original behaviour) */
-void imbe2_encoder_set_enh(void *enc_state, int level);
+/* enable the enhanced encoder (leashed pitch tracking, voicing
+   hysteresis, noise gate) on an encoder state; default off */
+void imbe2_encoder_set_enh(void *enc_state, int on);
 void imbe2_decoder_init(void *state);
 
 /* speech: 160 samples in; bits: 11 bytes out (word 0 in the low

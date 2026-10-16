@@ -21,6 +21,8 @@ add_executable(imbe_dec tools/imbe_dec.c)
 target_link_libraries(imbe_dec PRIVATE imbe2)
 
 add_executable(imbe2test tests/imbe2test.c)
+add_executable(imbebench tests/bench.c)
+target_link_libraries(imbebench PRIVATE imbe2)
 target_link_libraries(imbe2test PRIVATE imbe2 m)
 
 enable_testing()

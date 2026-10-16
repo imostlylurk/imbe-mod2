@@ -38,15 +38,11 @@ public:
 	// enable gain adjust for derived codecs (e.g. AMBE experiments)
 	void set_gain_adjust(float gain_adjust) {d_gain_adjust = gain_adjust;}
 
-	/* enhanced-encoder mode: soft-decision pitch tracking with a
-	   continuity penalty, stricter sub-multiple (octave) gating and
-	   wider voicing hysteresis - techniques described in the expired
-	   MBE patents (US4,885,790, US5,081,681).  Standard frames out.
-	   0 = original behaviour (default). */
-	void set_enh(int level) {enh = level;}
-	/* level 1: continuity pitch tracking + wider voicing hysteresis;
-	   level 2: additionally the spectral noise gate */
-	int get_enh(void) const {return enh;}
+	/* enhanced encoder: leashed-continuity pitch tracking, wider
+	   voicing hysteresis, stricter octave gating and the noise gate
+	   (the imbe_enc2 tool enables this; default off = bit-exact
+	   imbe-mod output) */
+	void set_enh(int on) {enh = on;}
 
 private:
 	IMBE_PARAM my_imbe_param;
@@ -72,8 +68,8 @@ private:
 	Word16 pe_lpf_mem[PE_LPF_ORD];
 	float d_gain_adjust;
 	int enh;
-	/* enh >= 2: min-statistics noise floor history (frame spectra,
-	   power domain, windowed minimum) for the spectral noise gate */
+	/* noise gate: min-statistics noise floor history (frame power,
+	   windowed minimum) */
 	Word32 ng_hist[150]; /* 3 s min-statistics window */
 	int ng_idx;
 	int ng_open;

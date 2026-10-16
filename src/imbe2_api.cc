@@ -57,9 +57,9 @@ void imbe2_decoder_init(void *state)
     new (state) imbe_decoder();
 }
 
-void imbe2_encoder_set_enh(void *enc_state, int level)
+void imbe2_encoder_set_enh(void *enc_state, int on)
 {
-    ((imbe_encoder *)enc_state)->set_enh(level);
+    ((imbe_encoder *)enc_state)->set_enh(on);
 }
 
 /* Standard IMBE 88-bit prioritized info stream: u0..u3 are 12-bit

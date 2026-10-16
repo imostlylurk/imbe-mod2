@@ -43,7 +43,7 @@ extern "C" int enc_diag_frame;
 
 
 #define CNST_0_75_Q1_15 0x6000
-/* leash: enhanced tracking may only prefer continuity among candidates
+/* leash: tracking may only prefer continuity among candidates
    whose e_p is within ENH_LEASH (Q4.12) of the raw minimum, bounding
    the spectral-fit sacrifice */
 #ifndef ENH_LEASH
@@ -265,10 +265,11 @@ void imbe_encoder::pitch_est(IMBE_PARAM *imbe_param, Word16 *frames_buf)
 
 	p = pb = min_index;
 	if (enh)
+	/* leashed continuity look-back (expired-patent soft-decision
+	   tracking): among candidates whose e_p is within ENH_LEASH of the
+	   raw minimum (fit sacrifice bounded), pick the one closest to the
+	   previous pitch */
 	{
-		/* soft-decision look-back: among candidates whose e_p is within
-		   ENH_LEASH of the raw minimum (fit sacrifice bounded), pick
-		   the one closest to the previous pitch */
 		Word16 e_raw = e_p_arr0[min_index];
 		Word32 L_best;
 		while (++p <= max_index)
@@ -296,13 +297,13 @@ void imbe_encoder::pitch_est(IMBE_PARAM *imbe_param, Word16 *frames_buf)
 	}
 	else
 	{
-	e_p_cur = e_p_arr0[min_index];	
-	while(++p <= max_index)
-		if(e_p_arr0[p] < e_p_cur)
-		{
-			e_p_cur = e_p_arr0[p];
-			pb = p;
-		}
+		e_p_cur = e_p_arr0[min_index];
+		while(++p <= max_index)
+			if(e_p_arr0[p] < e_p_cur)
+			{
+				e_p_cur = e_p_arr0[p];
+				pb = p;
+			}
 	}
 	ceb = add(e_p_cur, add(prev_e_p, prev_prev_e_p));
 
@@ -382,12 +383,12 @@ void imbe_encoder::pitch_est(IMBE_PARAM *imbe_param, Word16 *frames_buf)
             }
 
 	if (enh)
+	/* leashed continuity on the 3-window look-ahead (exact two-pass
+	   over the saved costs): among candidates whose cost is within
+	   ENH_LEASH of the raw minimum, prefer the pitch nearest the
+	   previous frame's - bounds the fit sacrifice while killing jitter
+	   between near-equal candidates */
 	{
-		/* leashed continuity (exact two-pass over the saved costs):
-		   among candidates whose 3-window cost is within ENH_LEASH of
-		   the raw minimum, prefer the pitch nearest the previous
-		   frame's - bounds the fit sacrifice while killing jitter
-		   between near-equal candidates */
 		Word16 cef_raw = e_p_arr0[0] + e1p1_e2p2_est_save[0];
 		Word32 L_nearbest = 0x7FFFFFFF;
 		Word16 p0_near = 0;
@@ -453,7 +454,7 @@ void imbe_encoder::pitch_est(IMBE_PARAM *imbe_param, Word16 *frames_buf)
 
 			cef = add(e_p_arr0[p_index], e1p1_e2p2_est_save[p_index]);
 
-			if(cef <= CNST_0_85_Q4_12 && mult_r(cef, enh ? CNST_0_75_Q1_15 : CNST_0_5882_Q1_15) <= cef_est)  // sub-multiple needs stronger evidence when enhanced
+			if(cef <= CNST_0_85_Q4_12 && mult_r(cef, enh ? CNST_0_75_Q1_15 : CNST_0_5882_Q1_15) <= cef_est)  // sub-multiple switch needs strong evidence when enhanced
 			{
 				pf = p_index;
 				break;

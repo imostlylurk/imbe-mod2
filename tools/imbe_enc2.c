@@ -1,4 +1,6 @@
-/* imbe_enc2: encode raw 8 kHz mono s16le speech to an IMBE file.
+/* imbe_enc2: encode raw 8 kHz mono s16le speech to an IMBE file with
+ * the ENHANCED encoder (leashed-continuity pitch tracking, wider
+ * voicing hysteresis, stricter octave gating, spectral noise gate).
  *
  * usage: imbe_enc2 input.raw output.imbe [--raw]
  *
@@ -8,43 +10,25 @@
  * final partial frame with silence.
  */
 
-#include <stdint.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-int enc_diag_frame;
-#ifdef ENC_DIAG_MISSING_GUARD
-#endif
-int enc_diag_frame; /* diag frame counter (engine ENC_DIAG) */
-
 #include "imbe2.h"
+
+int enc_diag_frame;
 
 int main(int argc, char *argv[])
 {
-    int raw = (argc == 4 && !strcmp(argv[3], "--raw")) ||
-              (argc == 5 && !strcmp(argv[4], "--raw"));
-    int ng = (argc == 4 && !strcmp(argv[3], "--ng")) ||
-             (argc == 5 && !strcmp(argv[4], "--ng"));
-    if ((argc != 3 && argc != 4 && argc != 5) ||
-        (argc == 4 && !raw && !ng))
+    int raw = argc == 4 && !strcmp(argv[3], "--raw");
+    if ((argc != 3 && argc != 4) || (argc == 4 && !raw))
     {
-        fprintf(stderr, "usage: %s input.raw output.imbe [--raw] [--ng]\n", argv[0]);
+        fprintf(stderr, "usage: %s input.raw output.imbe [--raw]\n", argv[0]);
         return 1;
     }
 
     FILE *fin = fopen(argv[1], "rb");
-    if (!fin)
-    {
-        perror(argv[1]);
-        return 1;
-    }
+    if (!fin) { perror(argv[1]); return 1; }
     FILE *fout = fopen(argv[2], "wb");
-    if (!fout)
-    {
-        perror(argv[2]);
-        fclose(fin);
-        return 1;
-    }
+    if (!fout) { perror(argv[2]); fclose(fin); return 1; }
 
     if (!raw)
     {
@@ -52,23 +36,22 @@ int main(int argc, char *argv[])
         fwrite(hdr, 1, sizeof(hdr), fout);
     }
 
-    static unsigned char state[8192]; /* >= imbe2_state_size() */
+    static unsigned char state[16384];
     if (imbe2_encoder_state_size() > sizeof(state))
     {
-        fprintf(stderr, "state too small: need %zu\n", imbe2_state_size());
+        fprintf(stderr, "state too small: need %zu\n", imbe2_encoder_state_size());
         return 1;
     }
     imbe2_encoder_init(state);
-    imbe2_encoder_set_enh(state, ng ? 2 : 1); /* enhanced encoder */
+    imbe2_encoder_set_enh(state, 1); /* enhanced encoder */
 
-    int16_t speech[IMBE2_SAMPLES_PER_FRAME];
+    static int16_t speech[IMBE2_SAMPLES_PER_FRAME];
     uint8_t bits[IMBE2_BYTES_PER_FRAME];
     long frames = 0;
     size_t n;
 
     while ((n = fread(speech, 2, IMBE2_SAMPLES_PER_FRAME, fin)) > 0)
     {
-        enc_diag_frame++;
         for (size_t i = n; i < IMBE2_SAMPLES_PER_FRAME; i++)
             speech[i] = 0;
         imbe2_encode(state, bits, speech);

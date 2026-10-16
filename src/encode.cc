@@ -65,7 +65,7 @@ void imbe_encoder::encode(IMBE_PARAM *imbe_param, Word16 *frame_vector, Word16 *
 	Word16 *wr_ptr, *sig_ptr;
 
 	//=====================================================================
-	// Enhanced mode >= 2: spectral noise gate, time domain.
+	// Enhanced mode: spectral noise gate, time domain.
 	//
 	//   Min-statistics noise floor (windowed minimum of frame power over
 	//   a 3 s history) with asymmetric hysteresis:
@@ -81,7 +81,7 @@ void imbe_encoder::encode(IMBE_PARAM *imbe_param, Word16 *frame_vector, Word16 *
 	//   splices).  Pitch tracking also sees the muted signal, which is
 	//   harmless: pause pitch is discarded with the pause energy.
 	//=====================================================================
-	if(enh >= 2)
+	if (enh)
 	{
 		Word32 eth = 0;
 		Word32 ng_floor = MAX_32;
