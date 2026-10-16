@@ -3,8 +3,8 @@
  * usage: imbe_dec input.imbe output.raw [--raw]
  *
  * Honours the 8-byte "IMB1" header if present; --raw forces
- * headerless interpretation (11 bytes per frame, word 0 in the low
- * bits, big-endian).
+ * headerless interpretation (11 bytes per frame, standard 88-bit
+ * prioritized info stream, u0 first).
  */
 
 #include <stdint.h>

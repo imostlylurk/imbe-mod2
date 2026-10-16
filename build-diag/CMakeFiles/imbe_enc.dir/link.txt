@@ -1,0 +1,1 @@
+/usr/bin/c++ -DENC_DIAG -flto=auto -Wl,--dependency-file=CMakeFiles/imbe_enc.dir/link.d CMakeFiles/imbe_enc.dir/tools/imbe_enc.c.o -o imbe_enc  libimbe2.a

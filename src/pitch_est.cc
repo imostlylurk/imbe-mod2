@@ -21,6 +21,7 @@
 
 
 #include <string.h>
+#include <stdlib.h>
 #include "typedef.h"
 #include "globals.h"
 #include "imbe.h"
@@ -33,7 +34,21 @@
 #include "dsp_sub.h"
 #include "imbe_vocoder.h"
 
+#ifdef ENC_DIAG
+#include <stdio.h>
+extern "C" int enc_diag_frame;
+#define frame_cnt enc_diag_frame
+#endif
 
+
+
+#define CNST_0_75_Q1_15 0x6000
+/* leash: enhanced tracking may only prefer continuity among candidates
+   whose e_p is within ENH_LEASH (Q4.12) of the raw minimum, bounding
+   the spectral-fit sacrifice */
+#ifndef ENH_LEASH
+#define ENH_LEASH 100   /* 0.024 in Q4.12 */
+#endif
 
 static const UWord16 min_max_tbl[203] = 
 {
@@ -249,6 +264,38 @@ void imbe_encoder::pitch_est(IMBE_PARAM *imbe_param, Word16 *frames_buf)
 	max_index = LO_BYTE(min_max_tbl[prev_pitch]);
 
 	p = pb = min_index;
+	if (enh)
+	{
+		/* soft-decision look-back: among candidates whose e_p is within
+		   ENH_LEASH of the raw minimum (fit sacrifice bounded), pick
+		   the one closest to the previous pitch */
+		Word16 e_raw = e_p_arr0[min_index];
+		Word32 L_best;
+		while (++p <= max_index)
+			if (e_p_arr0[p] < e_raw)
+				e_raw = e_p_arr0[p];
+		p = min_index;
+		pb = -1;
+		L_best = 0x7FFFFFFF;
+		while (p <= max_index)
+		{
+			if (e_p_arr0[p] <= e_raw + ENH_LEASH)
+			{
+				Word32 L_c = (Word32)labs(p - prev_pitch);
+				if (L_c < L_best)
+				{
+					L_best = L_c;
+					pb = p;
+				}
+			}
+			p++;
+		}
+		if (pb < 0)
+			pb = min_index;
+		e_p_cur = e_p_arr0[pb];
+	}
+	else
+	{
 	e_p_cur = e_p_arr0[min_index];	
 	while(++p <= max_index)
 		if(e_p_arr0[p] < e_p_cur)
@@ -256,6 +303,7 @@ void imbe_encoder::pitch_est(IMBE_PARAM *imbe_param, Word16 *frames_buf)
 			e_p_cur = e_p_arr0[p];
 			pb = p;
 		}
+	}
 	ceb = add(e_p_cur, add(prev_e_p, prev_prev_e_p));
 
 
@@ -268,6 +316,10 @@ void imbe_encoder::pitch_est(IMBE_PARAM *imbe_param, Word16 *frames_buf)
 
 		imbe_param->pitch = pb + 42;  // Result in Q15.1 format
 		imbe_param->e_p = prev_e_p;
+#ifdef ENC_DIAG
+		fprintf(stderr, "PE %d LB pb=%d ceb=%d.%04d prev=%d\n", frame_cnt,
+		        pb, ceb*10000/4096, (ceb*10000/4096*4096-ceb*10000)%10000, prev_pitch);
+#endif
 		return;
 	}
 
@@ -329,6 +381,36 @@ void imbe_encoder::pitch_est(IMBE_PARAM *imbe_param, Word16 *frames_buf)
                         p0++;
             }
 
+	if (enh)
+	{
+		/* leashed continuity (exact two-pass over the saved costs):
+		   among candidates whose 3-window cost is within ENH_LEASH of
+		   the raw minimum, prefer the pitch nearest the previous
+		   frame's - bounds the fit sacrifice while killing jitter
+		   between near-equal candidates */
+		Word16 cef_raw = e_p_arr0[0] + e1p1_e2p2_est_save[0];
+		Word32 L_nearbest = 0x7FFFFFFF;
+		Word16 p0_near = 0;
+		for (p0 = 1; p0 < 203; p0++)
+		{
+			Word16 c = add(e_p_arr0[p0], e1p1_e2p2_est_save[p0]);
+			if (c < cef_raw)
+				cef_raw = c;
+		}
+		for (p0 = 0; p0 < 203; p0++)
+		{
+			if (add(e_p_arr0[p0], e1p1_e2p2_est_save[p0]) <= cef_raw + ENH_LEASH)
+			{
+				Word32 L_c = (Word32)labs(p0 - prev_pitch);
+				if (L_c < L_nearbest)
+				{
+					L_nearbest = L_c;
+					p0_near = p0;
+				}
+			}
+		}
+		p0_est = p0_near;
+	}
 	pf = p0_est;
 	// Sub-multiples analysis
 	if(pf >= 42)  // Check if Sub-multiples are possible
@@ -371,7 +453,7 @@ void imbe_encoder::pitch_est(IMBE_PARAM *imbe_param, Word16 *frames_buf)
 
 			cef = add(e_p_arr0[p_index], e1p1_e2p2_est_save[p_index]);
 
-			if(cef <= CNST_0_85_Q4_12 && mult_r(cef, CNST_0_5882_Q1_15) <= cef_est)  // 1/1.7 = 0.5882
+			if(cef <= CNST_0_85_Q4_12 && mult_r(cef, enh ? CNST_0_75_Q1_15 : CNST_0_5882_Q1_15) <= cef_est)  // sub-multiple needs stronger evidence when enhanced
 			{
 				pf = p_index;
 				break;
@@ -403,6 +485,10 @@ void imbe_encoder::pitch_est(IMBE_PARAM *imbe_param, Word16 *frames_buf)
 	prev_prev_e_p   = prev_e_p;
 	prev_e_p        = e_p_arr0[p];
 
+#ifdef ENC_DIAG
+	fprintf(stderr, "PE %d LA p=%d ceb=%d cef=%d pf0=%d prev=%d sub=%d\n", frame_cnt,
+	        p, ceb, cef, p0_est, prev_pitch, (p != p0_est));
+#endif
 
 	imbe_param->pitch = p + 42;  // Result in Q15.1 format
 	imbe_param->e_p = prev_e_p; 

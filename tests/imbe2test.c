@@ -26,7 +26,7 @@ static double rms(const int16_t *s, int n)
 
 int main(void)
 {
-    static unsigned char enc_state[8192], dec_state[8192];
+    static unsigned char enc_state[16384], dec_state[16384];
     if (imbe2_state_size() > sizeof(enc_state))
     {
         printf("state size %zu too large for test buffer\n",

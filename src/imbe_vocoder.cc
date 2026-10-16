@@ -14,8 +14,12 @@ imbe_encoder::imbe_encoder (void) :
 	num_harms_prev2(0),
 	th_max(0),
 	dc_rmv_mem(0),
-	d_gain_adjust(0)
+	d_gain_adjust(0),
+	enh(0),
+	ng_idx(0),
+	ng_open(1)
 {
+	memset(ng_hist, 0, sizeof(ng_hist));
 	memset(wr_array, 0, sizeof(wr_array));
 	memset(wi_array, 0, sizeof(wi_array));
 	memset(pitch_est_buf, 0, sizeof(pitch_est_buf));

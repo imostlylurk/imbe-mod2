@@ -3,15 +3,18 @@
  * usage: imbe_enc input.raw output.imbe [--raw]
  *
  * Writes an 8-byte header ("IMB1", version, reserved) so files are
- * self-describing; --raw writes headerless 11-byte frames (word 0 in
- * the low bits, big-endian).  Pads the final partial frame with
- * silence.
+ * self-describing; --raw writes headerless 11-byte frames (the
+ * standard 88-bit prioritized info stream, u0 first).  Pads the
+ * final partial frame with silence.
  */
 
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#ifdef ENC_DIAG_MISSING_GUARD
+#endif
+int enc_diag_frame; /* diag frame counter (engine ENC_DIAG) */
 
 #include "imbe2.h"
 
@@ -59,6 +62,7 @@ int main(int argc, char *argv[])
 
     while ((n = fread(speech, 2, IMBE2_SAMPLES_PER_FRAME, fin)) > 0)
     {
+        enc_diag_frame++;
         for (size_t i = n; i < IMBE2_SAMPLES_PER_FRAME; i++)
             speech[i] = 0;
         imbe2_encode(state, bits, speech);

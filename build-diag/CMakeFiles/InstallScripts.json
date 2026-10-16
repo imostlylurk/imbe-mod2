@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/steve/Projects/imbe-mod2/build-diag/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

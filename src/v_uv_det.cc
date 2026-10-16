@@ -47,6 +47,8 @@
 #define CNST_0_25_Q1_15     0x2000
 #define CNST_PI_4_Q1_15     0x6488
 #define CNST_0_55_Q4_12     0x08CD
+#define CNST_0_62_Q1_15     0x4F5C
+#define CNST_0_40_Q1_15     0x3333
 
 
 
@@ -54,8 +56,8 @@
 
 
 
-extern FILE *fp_in, *fp_out;
-extern int frame_cnt;
+extern "C" int enc_diag_frame;
+#define frame_cnt enc_diag_frame
 
 
 void imbe_encoder::pitch_ref_init(void)
@@ -106,7 +108,7 @@ void imbe_encoder::v_uv_det(IMBE_PARAM *imbe_param, Cmplx16 *fft_buf)
 	Word32 fund_freq, fund_freq_2, fund_freq_acc_a, fund_freq_acc_b, fund_freq_acc, fund_fr_acc, L_tmp, amp_re_acc, amp_im_acc;
 	Word16 ha, hb, index_a, index_b, index_tbl[30], it_ind, re_tmp, im_tmp, re_tmp2, im_tmp2, sc_coef;
 	Word32 M_num[NUM_HARMS_MAX], M_num_sum, M_den_sum, D_num, D_den, th_lf, th_hf, th0, fund_fr_step, M_fcn_num, M_fcn_den; 
-	Word16 sp_rec_re, sp_rec_im, M_fcn;
+	Word16 sp_rec_re, sp_rec_im, M_fcn, ratio = 0;
 	Word16 band_cnt, num_harms_cnt, uv_harms_cnt,  Dk;
 	Word16 num_harms, num_bands, dsn_thr=0;
 	Word16 M_den[NUM_HARMS_MAX], b1_vec;
@@ -129,6 +131,21 @@ void imbe_encoder::v_uv_det(IMBE_PARAM *imbe_param, Cmplx16 *fft_buf)
 	imbe_param->num_harms = num_harms;
 	imbe_param->num_bands = num_bands;
 
+	//=========================================================================
+	//
+	// Enhanced mode >= 2: spectral noise gate.
+	//   Track the windowed minimum of the frame power (min-statistics,
+	//   ~1 s window) as the noise floor estimate F, then apply the soft
+	//   Wiener-style frame gain
+	//       G = max(gmin, (E - 2*F) / E)
+	//   to the analysis bins BEFORE the voicing/SA decisions.  Pitch
+	//   estimation is unaffected (separate path, ungated signal), so
+	//   word onsets and weak tails are not chopped; in silence G -> gmin
+	//   so the decoder synthesises near-zero unvoiced energy instead of
+	//   encoding the mic noise floor.  gmin stays non-zero to keep the
+	//   fixed-point divides well conditioned.
+	//
+	//=========================================================================
 	//=========================================================================
 	//
 	// M(th) function calculation
@@ -211,9 +228,9 @@ void imbe_encoder::v_uv_det(IMBE_PARAM *imbe_param, Cmplx16 *fft_buf)
 			if(imbe_param->e_p > CNST_0_55_Q4_12 && band_cnt >= 1)
 				dsn_thr = 0;
 			else if(v_uv_dsn[band_cnt] == 1)
-				dsn_thr = mult(M_fcn, sub(CNST_0_5625_Q1_15, mult(CNST_0_1741_Q1_15, extract_h(fund_fr_acc))));
+				dsn_thr = mult(M_fcn, sub(enh ? CNST_0_62_Q1_15 : CNST_0_5625_Q1_15, mult(CNST_0_1741_Q1_15, extract_h(fund_fr_acc))));
 			else
-				dsn_thr = mult(M_fcn, sub(CNST_0_45_Q1_15,   mult(CNST_0_1393_Q1_15, extract_h(fund_fr_acc))));
+				dsn_thr = mult(M_fcn, sub(enh ? CNST_0_40_Q1_15 : CNST_0_45_Q1_15,   mult(CNST_0_1393_Q1_15, extract_h(fund_fr_acc))));
 
 			fund_fr_acc = L_add(fund_fr_acc, fund_fr_step);
 		}
@@ -362,6 +379,21 @@ void imbe_encoder::v_uv_det(IMBE_PARAM *imbe_param, Cmplx16 *fft_buf)
 	}
 
 	imbe_param->l_uv = uv_harms_cnt;
+
+#ifdef ENC_DIAG
+	{
+		int k;
+		{
+			int k;
+			fprintf(stderr, "VV %d harms=%d bands=%d Mfcn=0x%04x b1=%04x uv=%d e_p=%d dsn=",
+			        frame_cnt, num_harms, num_bands, (unsigned)M_fcn, (unsigned)b1_vec, uv_harms_cnt,
+			        imbe_param->e_p);
+			for (k = 0; k < num_bands; k++)
+				fprintf(stderr, "%d", v_uv_dsn[k]);
+			fprintf(stderr, "\n");
+		}
+	}
+#endif
 
 
 	imbe_param->b_vec[1] = b1_vec;                                       // Save encoded voiced/unvoiced decision

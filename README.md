@@ -36,7 +36,7 @@ This project repackages that engine for standalone use:
 
 /* split (encoder-only / decoder-only) */
 static unsigned char enc[8192], dec[8192];
-imbe2_encoder_init(enc);            /* 6064 bytes  */
+imbe2_encoder_init(enc);            /* 6064 B, 8608 B with the noise-gate history */
 imbe2_decoder_init(dec);            /* 1932 bytes  */
 
 int16_t speech[IMBE2_SAMPLES_PER_FRAME]; /* 160 */
@@ -58,7 +58,7 @@ Every object is caller-owned static allocation; no heap after init.
 | Object | Size |
 |--------|------|
 | combined | 7,996 B |
-| encoder-only | 6,064 B |
+| encoder-only | 6,064 B (8,608 B with enh level 2) |
 | decoder-only | 1,932 B |
 
 The split grows the combined footprint slightly (each side carries

@@ -1,0 +1,2704 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    searched_directories:
+      - "/home/steve/.local/bin/uname"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/uname"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/uname"
+      - "/home/steve/.agent/extensions/ankh/bin/uname"
+      - "/home/steve/.bun/bin/uname"
+      - "/home/steve/perl5/bin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:218 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 7.2.6-1-cachyos-bore - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    searched_directories:
+      - "/home/steve/.local/bin/gmake"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/gmake"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/gmake"
+      - "/home/steve/.agent/extensions/ankh/bin/gmake"
+      - "/home/steve/.bun/bin/gmake"
+      - "/home/steve/perl5/bin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/usr/bin/gmake"
+      - "/bin/gmake"
+      - "/usr/local/sbin/gmake"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gmake"
+      - "/home/steve/.local/share/flatpak/exports/bin/gmake"
+      - "/var/lib/flatpak/exports/bin/gmake"
+      - "/usr/lib/jvm/default/bin/gmake"
+      - "/usr/bin/site_perl/gmake"
+      - "/usr/bin/vendor_perl/gmake"
+      - "/usr/bin/core_perl/gmake"
+      - "/opt/homebrew/bin/gmake"
+      - "/opt/homebrew/sbin/gmake"
+      - "/usr/sbin/gmake"
+      - "/sbin/gmake"
+      - "/home/steve/.hermes/bin/gmake"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/gmake"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/gmake"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/gmake"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/gmake"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/gmake"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/gmake"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/gmake"
+      - "/home/steve/.local/bin/make"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/make"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/make"
+      - "/home/steve/.agent/extensions/ankh/bin/make"
+      - "/home/steve/.bun/bin/make"
+      - "/home/steve/perl5/bin/make"
+      - "/usr/local/bin/make"
+    found: "/usr/bin/make"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "C compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cc"
+      - "gcc"
+      - "cl"
+      - "bcc"
+      - "xlc"
+      - "icx"
+      - "clang"
+    candidate_directories:
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    searched_directories:
+      - "/home/steve/.local/bin/cc"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/cc"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/cc"
+      - "/home/steve/.agent/extensions/ankh/bin/cc"
+      - "/home/steve/.bun/bin/cc"
+      - "/home/steve/perl5/bin/cc"
+      - "/usr/local/bin/cc"
+    found: "/usr/bin/cc"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+    found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: -DENC_DIAG
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/4.4.4/CompilerIdC/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    found: "/usr/bin/ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    found: "/usr/bin/ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    found: "/usr/bin/ld"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    found: "/usr/bin/nm"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    found: "/usr/bin/objdump"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    found: "/usr/bin/objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    found: "/usr/bin/readelf"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/home/steve/.local/bin/dlltool"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/dlltool"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/dlltool"
+      - "/home/steve/.agent/extensions/ankh/bin/dlltool"
+      - "/home/steve/.bun/bin/dlltool"
+      - "/home/steve/perl5/bin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/dlltool"
+      - "/home/steve/.local/share/flatpak/exports/bin/dlltool"
+      - "/var/lib/flatpak/exports/bin/dlltool"
+      - "/usr/lib/jvm/default/bin/dlltool"
+      - "/usr/bin/site_perl/dlltool"
+      - "/usr/bin/vendor_perl/dlltool"
+      - "/usr/bin/core_perl/dlltool"
+      - "/opt/homebrew/bin/dlltool"
+      - "/opt/homebrew/sbin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/home/steve/.hermes/bin/dlltool"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/dlltool"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/dlltool"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/dlltool"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/dlltool"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/dlltool"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/dlltool"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    found: "/usr/bin/addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    searched_directories:
+      - "/usr/bin/tapi"
+      - "/home/steve/.local/bin/tapi"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/tapi"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/tapi"
+      - "/home/steve/.agent/extensions/ankh/bin/tapi"
+      - "/home/steve/.bun/bin/tapi"
+      - "/home/steve/perl5/bin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/tapi"
+      - "/home/steve/.local/share/flatpak/exports/bin/tapi"
+      - "/var/lib/flatpak/exports/bin/tapi"
+      - "/usr/lib/jvm/default/bin/tapi"
+      - "/usr/bin/site_perl/tapi"
+      - "/usr/bin/vendor_perl/tapi"
+      - "/usr/bin/core_perl/tapi"
+      - "/opt/homebrew/bin/tapi"
+      - "/opt/homebrew/sbin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/home/steve/.hermes/bin/tapi"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/tapi"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/tapi"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/tapi"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/tapi"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/tapi"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/tapi"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-16.2"
+      - "gcc-ar-16"
+      - "gcc-ar16"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-16.2"
+      - "/home/steve/.local/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/gcc-ar-16.2"
+      - "/home/steve/.agent/extensions/ankh/bin/gcc-ar-16.2"
+      - "/home/steve/.bun/bin/gcc-ar-16.2"
+      - "/home/steve/perl5/bin/gcc-ar-16.2"
+      - "/usr/local/bin/gcc-ar-16.2"
+      - "/bin/gcc-ar-16.2"
+      - "/usr/local/sbin/gcc-ar-16.2"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ar-16.2"
+      - "/home/steve/.local/share/flatpak/exports/bin/gcc-ar-16.2"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-16.2"
+      - "/usr/lib/jvm/default/bin/gcc-ar-16.2"
+      - "/usr/bin/site_perl/gcc-ar-16.2"
+      - "/usr/bin/vendor_perl/gcc-ar-16.2"
+      - "/usr/bin/core_perl/gcc-ar-16.2"
+      - "/opt/homebrew/bin/gcc-ar-16.2"
+      - "/opt/homebrew/sbin/gcc-ar-16.2"
+      - "/usr/sbin/gcc-ar-16.2"
+      - "/sbin/gcc-ar-16.2"
+      - "/home/steve/.hermes/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/gcc-ar-16.2"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/gcc-ar-16.2"
+      - "/usr/bin/gcc-ar-16"
+      - "/home/steve/.local/bin/gcc-ar-16"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/gcc-ar-16"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/gcc-ar-16"
+      - "/home/steve/.agent/extensions/ankh/bin/gcc-ar-16"
+      - "/home/steve/.bun/bin/gcc-ar-16"
+      - "/home/steve/perl5/bin/gcc-ar-16"
+      - "/usr/local/bin/gcc-ar-16"
+      - "/bin/gcc-ar-16"
+      - "/usr/local/sbin/gcc-ar-16"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ar-16"
+      - "/home/steve/.local/share/flatpak/exports/bin/gcc-ar-16"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-16"
+      - "/usr/lib/jvm/default/bin/gcc-ar-16"
+      - "/usr/bin/site_perl/gcc-ar-16"
+      - "/usr/bin/vendor_perl/gcc-ar-16"
+      - "/usr/bin/core_perl/gcc-ar-16"
+      - "/opt/homebrew/bin/gcc-ar-16"
+      - "/opt/homebrew/sbin/gcc-ar-16"
+      - "/usr/sbin/gcc-ar-16"
+      - "/sbin/gcc-ar-16"
+      - "/home/steve/.hermes/bin/gcc-ar-16"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/gcc-ar-16"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/gcc-ar-16"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/gcc-ar-16"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/gcc-ar-16"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/gcc-ar-16"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/gcc-ar-16"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/gcc-ar-16"
+      - "/usr/bin/gcc-ar16"
+      - "/home/steve/.local/bin/gcc-ar16"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/gcc-ar16"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/gcc-ar16"
+      - "/home/steve/.agent/extensions/ankh/bin/gcc-ar16"
+      - "/home/steve/.bun/bin/gcc-ar16"
+      - "/home/steve/perl5/bin/gcc-ar16"
+      - "/usr/local/bin/gcc-ar16"
+      - "/bin/gcc-ar16"
+      - "/usr/local/sbin/gcc-ar16"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ar16"
+      - "/home/steve/.local/share/flatpak/exports/bin/gcc-ar16"
+      - "/var/lib/flatpak/exports/bin/gcc-ar16"
+      - "/usr/lib/jvm/default/bin/gcc-ar16"
+      - "/usr/bin/site_perl/gcc-ar16"
+      - "/usr/bin/vendor_perl/gcc-ar16"
+      - "/usr/bin/core_perl/gcc-ar16"
+      - "/opt/homebrew/bin/gcc-ar16"
+      - "/opt/homebrew/sbin/gcc-ar16"
+      - "/usr/sbin/gcc-ar16"
+      - "/sbin/gcc-ar16"
+      - "/home/steve/.hermes/bin/gcc-ar16"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/gcc-ar16"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/gcc-ar16"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/gcc-ar16"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/gcc-ar16"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/gcc-ar16"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/gcc-ar16"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/gcc-ar16"
+    found: "/usr/bin/gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-16.2"
+      - "gcc-ranlib-16"
+      - "gcc-ranlib16"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-16.2"
+      - "/home/steve/.local/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/gcc-ranlib-16.2"
+      - "/home/steve/.agent/extensions/ankh/bin/gcc-ranlib-16.2"
+      - "/home/steve/.bun/bin/gcc-ranlib-16.2"
+      - "/home/steve/perl5/bin/gcc-ranlib-16.2"
+      - "/usr/local/bin/gcc-ranlib-16.2"
+      - "/bin/gcc-ranlib-16.2"
+      - "/usr/local/sbin/gcc-ranlib-16.2"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ranlib-16.2"
+      - "/home/steve/.local/share/flatpak/exports/bin/gcc-ranlib-16.2"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-16.2"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-16.2"
+      - "/usr/bin/site_perl/gcc-ranlib-16.2"
+      - "/usr/bin/vendor_perl/gcc-ranlib-16.2"
+      - "/usr/bin/core_perl/gcc-ranlib-16.2"
+      - "/opt/homebrew/bin/gcc-ranlib-16.2"
+      - "/opt/homebrew/sbin/gcc-ranlib-16.2"
+      - "/usr/sbin/gcc-ranlib-16.2"
+      - "/sbin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/gcc-ranlib-16.2"
+      - "/usr/bin/gcc-ranlib-16"
+      - "/home/steve/.local/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/gcc-ranlib-16"
+      - "/home/steve/.agent/extensions/ankh/bin/gcc-ranlib-16"
+      - "/home/steve/.bun/bin/gcc-ranlib-16"
+      - "/home/steve/perl5/bin/gcc-ranlib-16"
+      - "/usr/local/bin/gcc-ranlib-16"
+      - "/bin/gcc-ranlib-16"
+      - "/usr/local/sbin/gcc-ranlib-16"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ranlib-16"
+      - "/home/steve/.local/share/flatpak/exports/bin/gcc-ranlib-16"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-16"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-16"
+      - "/usr/bin/site_perl/gcc-ranlib-16"
+      - "/usr/bin/vendor_perl/gcc-ranlib-16"
+      - "/usr/bin/core_perl/gcc-ranlib-16"
+      - "/opt/homebrew/bin/gcc-ranlib-16"
+      - "/opt/homebrew/sbin/gcc-ranlib-16"
+      - "/usr/sbin/gcc-ranlib-16"
+      - "/sbin/gcc-ranlib-16"
+      - "/home/steve/.hermes/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/gcc-ranlib-16"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/gcc-ranlib-16"
+      - "/usr/bin/gcc-ranlib16"
+      - "/home/steve/.local/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/gcc-ranlib16"
+      - "/home/steve/.agent/extensions/ankh/bin/gcc-ranlib16"
+      - "/home/steve/.bun/bin/gcc-ranlib16"
+      - "/home/steve/perl5/bin/gcc-ranlib16"
+      - "/usr/local/bin/gcc-ranlib16"
+      - "/bin/gcc-ranlib16"
+      - "/usr/local/sbin/gcc-ranlib16"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ranlib16"
+      - "/home/steve/.local/share/flatpak/exports/bin/gcc-ranlib16"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib16"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib16"
+      - "/usr/bin/site_perl/gcc-ranlib16"
+      - "/usr/bin/vendor_perl/gcc-ranlib16"
+      - "/usr/bin/core_perl/gcc-ranlib16"
+      - "/opt/homebrew/bin/gcc-ranlib16"
+      - "/opt/homebrew/sbin/gcc-ranlib16"
+      - "/usr/sbin/gcc-ranlib16"
+      - "/sbin/gcc-ranlib16"
+      - "/home/steve/.hermes/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/gcc-ranlib16"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/gcc-ranlib16"
+    found: "/usr/bin/gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "CC"
+      - "g++"
+      - "aCC"
+      - "cl"
+      - "bcc"
+      - "xlC"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/usr/bin/"
+    found: "/usr/bin/c++"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+    found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: -DENC_DIAG
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/4.4.4/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-16.2"
+      - "gcc-ar-16"
+      - "gcc-ar16"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-16.2"
+      - "/home/steve/.local/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/gcc-ar-16.2"
+      - "/home/steve/.agent/extensions/ankh/bin/gcc-ar-16.2"
+      - "/home/steve/.bun/bin/gcc-ar-16.2"
+      - "/home/steve/perl5/bin/gcc-ar-16.2"
+      - "/usr/local/bin/gcc-ar-16.2"
+      - "/bin/gcc-ar-16.2"
+      - "/usr/local/sbin/gcc-ar-16.2"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ar-16.2"
+      - "/home/steve/.local/share/flatpak/exports/bin/gcc-ar-16.2"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-16.2"
+      - "/usr/lib/jvm/default/bin/gcc-ar-16.2"
+      - "/usr/bin/site_perl/gcc-ar-16.2"
+      - "/usr/bin/vendor_perl/gcc-ar-16.2"
+      - "/usr/bin/core_perl/gcc-ar-16.2"
+      - "/opt/homebrew/bin/gcc-ar-16.2"
+      - "/opt/homebrew/sbin/gcc-ar-16.2"
+      - "/usr/sbin/gcc-ar-16.2"
+      - "/sbin/gcc-ar-16.2"
+      - "/home/steve/.hermes/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/gcc-ar-16.2"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/gcc-ar-16.2"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/gcc-ar-16.2"
+      - "/usr/bin/gcc-ar-16"
+      - "/home/steve/.local/bin/gcc-ar-16"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/gcc-ar-16"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/gcc-ar-16"
+      - "/home/steve/.agent/extensions/ankh/bin/gcc-ar-16"
+      - "/home/steve/.bun/bin/gcc-ar-16"
+      - "/home/steve/perl5/bin/gcc-ar-16"
+      - "/usr/local/bin/gcc-ar-16"
+      - "/bin/gcc-ar-16"
+      - "/usr/local/sbin/gcc-ar-16"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ar-16"
+      - "/home/steve/.local/share/flatpak/exports/bin/gcc-ar-16"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-16"
+      - "/usr/lib/jvm/default/bin/gcc-ar-16"
+      - "/usr/bin/site_perl/gcc-ar-16"
+      - "/usr/bin/vendor_perl/gcc-ar-16"
+      - "/usr/bin/core_perl/gcc-ar-16"
+      - "/opt/homebrew/bin/gcc-ar-16"
+      - "/opt/homebrew/sbin/gcc-ar-16"
+      - "/usr/sbin/gcc-ar-16"
+      - "/sbin/gcc-ar-16"
+      - "/home/steve/.hermes/bin/gcc-ar-16"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/gcc-ar-16"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/gcc-ar-16"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/gcc-ar-16"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/gcc-ar-16"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/gcc-ar-16"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/gcc-ar-16"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/gcc-ar-16"
+      - "/usr/bin/gcc-ar16"
+      - "/home/steve/.local/bin/gcc-ar16"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/gcc-ar16"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/gcc-ar16"
+      - "/home/steve/.agent/extensions/ankh/bin/gcc-ar16"
+      - "/home/steve/.bun/bin/gcc-ar16"
+      - "/home/steve/perl5/bin/gcc-ar16"
+      - "/usr/local/bin/gcc-ar16"
+      - "/bin/gcc-ar16"
+      - "/usr/local/sbin/gcc-ar16"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ar16"
+      - "/home/steve/.local/share/flatpak/exports/bin/gcc-ar16"
+      - "/var/lib/flatpak/exports/bin/gcc-ar16"
+      - "/usr/lib/jvm/default/bin/gcc-ar16"
+      - "/usr/bin/site_perl/gcc-ar16"
+      - "/usr/bin/vendor_perl/gcc-ar16"
+      - "/usr/bin/core_perl/gcc-ar16"
+      - "/opt/homebrew/bin/gcc-ar16"
+      - "/opt/homebrew/sbin/gcc-ar16"
+      - "/usr/sbin/gcc-ar16"
+      - "/sbin/gcc-ar16"
+      - "/home/steve/.hermes/bin/gcc-ar16"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/gcc-ar16"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/gcc-ar16"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/gcc-ar16"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/gcc-ar16"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/gcc-ar16"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/gcc-ar16"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/gcc-ar16"
+    found: "/usr/bin/gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-16.2"
+      - "gcc-ranlib-16"
+      - "gcc-ranlib16"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/steve/.local/bin/"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/"
+      - "/home/steve/.agent/extensions/ankh/bin/"
+      - "/home/steve/.bun/bin/"
+      - "/home/steve/perl5/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/home/steve/.local/share/flatpak/exports/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/home/steve/.hermes/bin/"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-16.2"
+      - "/home/steve/.local/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/gcc-ranlib-16.2"
+      - "/home/steve/.agent/extensions/ankh/bin/gcc-ranlib-16.2"
+      - "/home/steve/.bun/bin/gcc-ranlib-16.2"
+      - "/home/steve/perl5/bin/gcc-ranlib-16.2"
+      - "/usr/local/bin/gcc-ranlib-16.2"
+      - "/bin/gcc-ranlib-16.2"
+      - "/usr/local/sbin/gcc-ranlib-16.2"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ranlib-16.2"
+      - "/home/steve/.local/share/flatpak/exports/bin/gcc-ranlib-16.2"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-16.2"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-16.2"
+      - "/usr/bin/site_perl/gcc-ranlib-16.2"
+      - "/usr/bin/vendor_perl/gcc-ranlib-16.2"
+      - "/usr/bin/core_perl/gcc-ranlib-16.2"
+      - "/opt/homebrew/bin/gcc-ranlib-16.2"
+      - "/opt/homebrew/sbin/gcc-ranlib-16.2"
+      - "/usr/sbin/gcc-ranlib-16.2"
+      - "/sbin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/gcc-ranlib-16.2"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/gcc-ranlib-16.2"
+      - "/usr/bin/gcc-ranlib-16"
+      - "/home/steve/.local/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/gcc-ranlib-16"
+      - "/home/steve/.agent/extensions/ankh/bin/gcc-ranlib-16"
+      - "/home/steve/.bun/bin/gcc-ranlib-16"
+      - "/home/steve/perl5/bin/gcc-ranlib-16"
+      - "/usr/local/bin/gcc-ranlib-16"
+      - "/bin/gcc-ranlib-16"
+      - "/usr/local/sbin/gcc-ranlib-16"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ranlib-16"
+      - "/home/steve/.local/share/flatpak/exports/bin/gcc-ranlib-16"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-16"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-16"
+      - "/usr/bin/site_perl/gcc-ranlib-16"
+      - "/usr/bin/vendor_perl/gcc-ranlib-16"
+      - "/usr/bin/core_perl/gcc-ranlib-16"
+      - "/opt/homebrew/bin/gcc-ranlib-16"
+      - "/opt/homebrew/sbin/gcc-ranlib-16"
+      - "/usr/sbin/gcc-ranlib-16"
+      - "/sbin/gcc-ranlib-16"
+      - "/home/steve/.hermes/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/gcc-ranlib-16"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/gcc-ranlib-16"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/gcc-ranlib-16"
+      - "/usr/bin/gcc-ranlib16"
+      - "/home/steve/.local/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/hermes-agent/.hermes/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin/gcc-ranlib16"
+      - "/home/steve/.agent/extensions/ankh/bin/gcc-ranlib16"
+      - "/home/steve/.bun/bin/gcc-ranlib16"
+      - "/home/steve/perl5/bin/gcc-ranlib16"
+      - "/usr/local/bin/gcc-ranlib16"
+      - "/bin/gcc-ranlib16"
+      - "/usr/local/sbin/gcc-ranlib16"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ranlib16"
+      - "/home/steve/.local/share/flatpak/exports/bin/gcc-ranlib16"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib16"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib16"
+      - "/usr/bin/site_perl/gcc-ranlib16"
+      - "/usr/bin/vendor_perl/gcc-ranlib16"
+      - "/usr/bin/core_perl/gcc-ranlib16"
+      - "/opt/homebrew/bin/gcc-ranlib16"
+      - "/opt/homebrew/sbin/gcc-ranlib16"
+      - "/usr/sbin/gcc-ranlib16"
+      - "/sbin/gcc-ranlib16"
+      - "/home/steve/.hermes/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64/gcc-ranlib16"
+      - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin/gcc-ranlib16"
+      - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64/gcc-ranlib16"
+    found: "/usr/bin/gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/steve/.local/bin"
+        - "/home/steve/.local/bin"
+        - "/home/steve/.hermes/hermes-agent/.hermes/bin"
+        - "/home/steve/.hermes/installs/26da30f8abff70ac/environments/73d4891090e34c75be547f3d8adb58e3/venv/bin"
+        - "/home/steve/.agent/extensions/ankh/bin"
+        - "/home/steve/.bun/bin"
+        - "/home/steve/perl5/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/home/steve/.local/share/flatpak/exports/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/steve/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/home/steve/.hermes/bin"
+        - "/home/steve/.hermes/tools/python-3.14.7+20260901-linux-x64/bin"
+        - "/home/steve/.hermes/tools/agent-browser-0.26.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/cua-driver-0.21.0-linux-x64"
+        - "/home/steve/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin"
+        - "/home/steve/.hermes/tools/npm-12.0.2-linux-x64/bin"
+        - "/home/steve/.hermes/tools/node-26.7.0-linux-x64/bin"
+        - "/home/steve/.hermes/tools/ripgrep-15.2.0-linux-x64"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/CMakeScratch/TryCompile-fvNvM6"
+      binary: "/home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/CMakeScratch/TryCompile-fvNvM6"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: "-DENC_DIAG"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: '/home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/CMakeScratch/TryCompile-fvNvM6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6cc3f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_6cc3f.dir/build.make CMakeFiles/cmTC_6cc3f.dir/build
+        make[1]: Entering directory '/home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/CMakeScratch/TryCompile-fvNvM6'
+        Building C object CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -DENC_DIAG    -v -o CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.2.1 20260810 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6cc3f.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v -D ENC_DIAG /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_6cc3f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /home/steve/.hermes/cache/scratch/cc51PgOK.s
+        GNU C23 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 16.2.1 20260810, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Compiler executable checksum: f931fde8682f21d1ebcf65f6b881e532
+        COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6cc3f.dir/'
+         as -v --64 -o CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o /home/steve/.hermes/cache/scratch/cc51PgOK.s
+        GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_6cc3f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cc3f.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.2.1 20260810 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'cmTC_6cc3f' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6cc3f.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/home/steve/.hermes/cache/scratch/ccXMjJ95.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6cc3f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        collect2 version 16.2.1 20260810
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/home/steve/.hermes/cache/scratch/ccXMjJ95.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6cc3f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.47
+        COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'cmTC_6cc3f' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6cc3f.'
+        /usr/bin/cc -DENC_DIAG   -v -Wl,-v CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o -o cmTC_6cc3f
+        make[1]: Leaving directory '/home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/CMakeScratch/TryCompile-fvNvM6'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/16/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/16/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/16/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
+        ignore line: [Change Dir: '/home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/CMakeScratch/TryCompile-fvNvM6']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6cc3f/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_6cc3f.dir/build.make CMakeFiles/cmTC_6cc3f.dir/build]
+        ignore line: [make[1]: Entering directory '/home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/CMakeScratch/TryCompile-fvNvM6']
+        ignore line: [Building C object CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -DENC_DIAG    -v -o CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.2.1 20260810 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6cc3f.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v -D ENC_DIAG /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_6cc3f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /home/steve/.hermes/cache/scratch/cc51PgOK.s]
+        ignore line: [GNU C23 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 16.2.1 20260810  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: f931fde8682f21d1ebcf65f6b881e532]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6cc3f.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o /home/steve/.hermes/cache/scratch/cc51PgOK.s]
+        ignore line: [GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_6cc3f]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cc3f.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.2.1 20260810 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'cmTC_6cc3f' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6cc3f.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/home/steve/.hermes/cache/scratch/ccXMjJ95.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6cc3f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/home/steve/.hermes/cache/scratch/ccXMjJ95.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
+          arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_6cc3f] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/16] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
+          arg [-latomic_asneeded] ==> lib [atomic_asneeded]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        ignore line: [collect2 version 16.2.1 20260810]
+        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/home/steve/.hermes/cache/scratch/ccXMjJ95.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6cc3f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/bin/ld]
+        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/home/steve/.hermes/cache/scratch/ccXMjJ95.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6cc3f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/home/steve/.hermes/cache/scratch/ccXMjJ95.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6cc3f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_6cc3f.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        linker tool for 'C': /usr/bin/ld -m;elf
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/16]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s_asneeded;atomic_asneeded;c;gcc;gcc_s_asneeded]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/16;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.47
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/CMakeScratch/TryCompile-KaXbV9"
+      binary: "/home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/CMakeScratch/TryCompile-KaXbV9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DENC_DIAG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: '/home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/CMakeScratch/TryCompile-KaXbV9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_697b4/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_697b4.dir/build.make CMakeFiles/cmTC_697b4.dir/build
+        make[1]: Entering directory '/home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/CMakeScratch/TryCompile-KaXbV9'
+        Building CXX object CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -DENC_DIAG    -v -o CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.2.1 20260810 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_697b4.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE -D ENC_DIAG /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_697b4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /home/steve/.hermes/cache/scratch/ccXW2PhX.s
+        GNU C++20 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 16.2.1 20260810, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/x86_64-pc-linux-gnu
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/backward
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 4e9ac8b201f4ca740be09d0c7a39f82f
+        COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_697b4.dir/'
+         as -v --64 -o CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o /home/steve/.hermes/cache/scratch/ccXW2PhX.s
+        GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_697b4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_697b4.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.2.1 20260810 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'cmTC_697b4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_697b4.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/home/steve/.hermes/cache/scratch/ccuzsSUg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_697b4 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        collect2 version 16.2.1 20260810
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/home/steve/.hermes/cache/scratch/ccuzsSUg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_697b4 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.47
+        COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'cmTC_697b4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_697b4.'
+        /usr/bin/c++ -DENC_DIAG   -v -Wl,-v CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_697b4
+        make[1]: Leaving directory '/home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/CMakeScratch/TryCompile-KaXbV9'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/x86_64-pc-linux-gnu]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/backward]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/16/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16] ==> [/usr/include/c++/16]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/x86_64-pc-linux-gnu] ==> [/usr/include/c++/16/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/backward] ==> [/usr/include/c++/16/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/16/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/16;/usr/include/c++/16/x86_64-pc-linux-gnu;/usr/include/c++/16/backward;/usr/lib/gcc/x86_64-pc-linux-gnu/16/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
+        ignore line: [Change Dir: '/home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/CMakeScratch/TryCompile-KaXbV9']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_697b4/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_697b4.dir/build.make CMakeFiles/cmTC_697b4.dir/build]
+        ignore line: [make[1]: Entering directory '/home/steve/Projects/imbe-mod2/build-diag/CMakeFiles/CMakeScratch/TryCompile-KaXbV9']
+        ignore line: [Building CXX object CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -DENC_DIAG    -v -o CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.2.1 20260810 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_697b4.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE -D ENC_DIAG /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_697b4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /home/steve/.hermes/cache/scratch/ccXW2PhX.s]
+        ignore line: [GNU C++20 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 16.2.1 20260810  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 4e9ac8b201f4ca740be09d0c7a39f82f]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_697b4.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o /home/steve/.hermes/cache/scratch/ccXW2PhX.s]
+        ignore line: [GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_697b4]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_697b4.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.2.1 20260810 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'ENC_DIAG' '-v' '-o' 'cmTC_697b4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_697b4.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/home/steve/.hermes/cache/scratch/ccuzsSUg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_697b4 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/home/steve/.hermes/cache/scratch/ccuzsSUg.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_697b4] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/16] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-latomic_asneeded] ==> lib [atomic_asneeded]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        ignore line: [collect2 version 16.2.1 20260810]
+        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/home/steve/.hermes/cache/scratch/ccuzsSUg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_697b4 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/bin/ld]
+        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/home/steve/.hermes/cache/scratch/ccuzsSUg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_697b4 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/home/steve/.hermes/cache/scratch/ccuzsSUg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_697b4 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_697b4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld -m;elf
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/16]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;atomic_asneeded;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/16;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.47
+...

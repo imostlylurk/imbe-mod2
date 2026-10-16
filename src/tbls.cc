@@ -150,7 +150,11 @@ const UWord32 lmprbl_tbl[] =
 //-----------------------------------------------------------------------------
 const Word16 gain_qnt_tbl[] = 
 {
-	-5821, -5518, -5239, -4880, -4549, -4292, -4057, -3760, -3370, -2903,
+	/* bottom 8 levels: firmware-corrected MONO65 ladder (Annex-E minus
+	   0.25*(8-k), Q11) - the reference vocoder's real table; indices
+	   8..63 are identical to Annex-E.  Bare Annex-E decodes low-gain
+	   (noise-floor/unvoiced) frames too high. */
+	-9917, -9102, -8311, -7440, -6597, -5828, -5081, -4272, -3370, -2903,
 	-2583, -2305, -1962, -1601, -1138,  -711,  -302,    57,   433,   795,
 	 1132,  1510,  1909,  2333,  2705,  3038,  3376,  3689,  3979,  4339,
 	 4754,  5129,  5435,  5695,  5991,  6300,  6596,  6969,  7342,  7751,

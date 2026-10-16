@@ -27,7 +27,7 @@ extern "C"
 
 /* imbe file header (tools): magic "IMB1", version, reserved */
 #define IMBE2_FILE_MAGIC ((uint32_t)0x31424D49) /* "IMB1" LE */
-#define IMBE2_FILE_VERSION 1
+#define IMBE2_FILE_VERSION 2
 
 typedef struct imbe2 imbe2_t; /* opaque; see imbe2_state_size() */
 
@@ -45,10 +45,12 @@ void *imbe2_decoder_from(void *combined);
 size_t imbe2_encoder_state_size(void);
 size_t imbe2_decoder_state_size(void);
 void imbe2_encoder_init(void *state);
+/* enhanced-encoder mode on an encoder state (0 = original behaviour) */
+void imbe2_encoder_set_enh(void *enc_state, int level);
 void imbe2_decoder_init(void *state);
 
 /* speech: 160 samples in; bits: 11 bytes out (word 0 in the low
-   bits, big-endian byte order) */
+ bits, big-endian byte order; u0..u3 are 12-bit words, u4..u6 11-bit, u7 7-bit) */
 void imbe2_encode(void *state, uint8_t *bits, const int16_t *speech);
 
 /* bits: 11 bytes in; speech: 160 samples out */

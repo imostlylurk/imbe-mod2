@@ -37,6 +37,12 @@
 #include "ch_encode.h"
 #include "imbe_vocoder.h"
 
+#ifdef ENC_DIAG
+#include <stdio.h>
+extern "C" int enc_diag_frame;
+#define frame_cnt enc_diag_frame
+#endif
+
 
 
 
@@ -57,7 +63,63 @@ void imbe_encoder::encode(IMBE_PARAM *imbe_param, Word16 *frame_vector, Word16 *
 {
 	Word16 i;
 	Word16 *wr_ptr, *sig_ptr;
-	
+
+	//=====================================================================
+	// Enhanced mode >= 2: spectral noise gate, time domain.
+	//
+	//   Min-statistics noise floor (windowed minimum of frame power over
+	//   a 3 s history) with asymmetric hysteresis:
+	//     open  at E > 25*Fmin   (quiet speech sits 25x+ above the deep
+	//                             minimum and must stay open)
+	//     close at E <  4*Fmin   (~the mean noise power)
+	//   Closed frames are muted to true digital silence BEFORE the
+	//   analysis.  Synthesised partial gain steps on the SA parameters
+	//   ring the predictive log2-DCT quantizer (bounded gain tables),
+	//   but the codec encodes real zero input perfectly: a full mute
+	//   lands on the decoder's idle floor within one frame and word
+	//   onsets re-open instantly (measured on speech/silence/speech
+	//   splices).  Pitch tracking also sees the muted signal, which is
+	//   harmless: pause pitch is discarded with the pause energy.
+	//=====================================================================
+	if(enh >= 2)
+	{
+		Word32 eth = 0;
+		Word32 ng_floor = MAX_32;
+		Word16 ratio;
+		static Word16 gated[FRAME];
+
+		for(i = 0; i < FRAME; i++)
+			eth = L_mac(eth, snd[i], snd[i]);
+		ng_hist[ng_idx] = eth;
+		ng_idx = (ng_idx + 1 == 150) ? 0 : ng_idx + 1;
+		for(i = 0; i < 150; i++)
+			if(ng_hist[i] < ng_floor)
+				ng_floor = ng_hist[i];
+
+		if(ng_floor > 4 && eth > 8)
+		{
+			i = norm_l(eth);
+			ratio = div_s(extract_h(L_shl(ng_floor, i)),
+			              extract_h(L_shl(eth, i)));
+			if(!ng_open && ratio < 0x0524)      /* 0.040: E > 25*Fmin */
+				ng_open = 1;
+			else if(ng_open && ratio > 0x2000)  /* 0.250: E <  4*Fmin */
+				ng_open = 0;
+		}
+
+#ifdef ENC_DIAG
+		fprintf(stderr, "NG %d eth=%ld floor=%ld open=%d\n", frame_cnt,
+		        (long)eth, (long)ng_floor, ng_open);
+#endif
+
+		if(!ng_open)
+		{
+			for(i = 0; i < FRAME; i++)
+				gated[i] = 0;
+			snd = gated;
+		}
+	}
+
 	for(i = 0; i < PITCH_EST_BUF_SIZE - FRAME; i++)
 	{
 		pitch_est_buf[i] = pitch_est_buf[i + FRAME];
